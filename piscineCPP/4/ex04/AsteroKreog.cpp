@@ -1,0 +1,28 @@
+#include "AsteroKreog.hpp"
+
+Asteroid::Asteroid() {}
+
+Asteroid::~Asteroid() {}
+
+Asteroid::Asteroid(const Asteroid &c) {
+    (void)c;
+}
+
+Asteroid &Asteroid::operator=(const Asteroid &c) {
+    (void)c;
+    return *this;
+}
+
+std::string Asteroid::beMined(DeepCoreMiner *miner) const {
+    (void)miner;
+    return "Dragonite";
+}
+
+std::string Asteroid::beMined(StripMiner *miner) const {
+    (void)miner;
+    return "Flavium";
+}
+
+std::string Asteroid::getName() const {
+    return "Asteroid";
+}
